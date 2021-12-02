@@ -47,13 +47,10 @@ class _NewTransactionState extends State<NewTransaction> {
       lastDate: DateTime.now(),
       builder: (BuildContext context, Widget child) {
         return Theme(
-          data: ThemeData(
-            primarySwatch: Colors.purple,
-            colorScheme: ColorScheme.light().copyWith(
-              secondary: Colors.amber,
-              onSecondary: Colors.amber,
+          data: ThemeData.light().copyWith(
+            colorScheme: ColorScheme.fromSwatch(
+              primarySwatch: Colors.purple,
             ),
-            secondaryHeaderColor: Colors.amber,
           ),
           child: child,
         );
