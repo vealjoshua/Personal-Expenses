@@ -22,15 +22,13 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final ThemeData theme = ThemeData();
-
     return MaterialApp(
       title: 'Personal Expenses',
       theme: ThemeData(
         primarySwatch: Colors.purple,
-        colorScheme: theme.colorScheme.copyWith(
-          secondary: Colors.amber,
-        ),
+        colorScheme: ThemeData().colorScheme.copyWith(
+              secondary: Colors.amber,
+            ),
         errorColor: Colors.red,
         fontFamily: 'Quicksand',
         textTheme: ThemeData.light().textTheme.copyWith(
